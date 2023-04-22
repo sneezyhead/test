@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Clusterization</title>
+  </head>
+  <body>
+    <canvas id="canvas" width="800" height="800"></canvas>
+    <style>
+      canvas {
+      border: 1px solid black;
+      margin: 20px auto;
+      display: block;
+    }</style>
+    <div>
+      <form id="form">
+          <label for="numPoints">Enter number of points:</label>
+          <input type="number" id="numPoints" min="1" max="5000"/>
+          <input type="submit" value="Create points"/>
+       </form>
+      <button id="clear-button">Clear canvas</button>
+    </div>
+    <div>
+      <label>Enter number of clusters: <input type="number" id="k" min="1"></label>
+      <button id="clusterize">Create clusters</button>
+    </div>
+    <script src="cluster.js"></script>
+  </body>
+</html>
